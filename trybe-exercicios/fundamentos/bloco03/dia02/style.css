@@ -1,0 +1,27 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}     
+.teste01 {
+    background-color: blueviolet;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 75px;
+    text-align: center;
+    text-decoration: underline;
+}  
+
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+ }
+ .brown {
+     background-color: brown;
+ }
+body {
+    font-size: 16px;
+}
