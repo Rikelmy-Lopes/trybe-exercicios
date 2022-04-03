@@ -1,0 +1,42 @@
+ol {
+    background-color: yellow;
+
+}
+
+.even {
+   color: green;
+}
+
+.odd {
+    text-transform: uppercase;
+}
+
+h3, h1 {
+    color: red;
+}
+
+h1.italic {
+    font-size: 40px;
+    border: solid black 1px;
+    
+}
+
+ol li {
+    font-size: 20px;
+}
+span {
+    font-weight: 700;
+}
+
+div {
+    color: blue;
+}
+
+div div {
+    background-color: pink;
+}
+
+.change-color:hover {
+    color: green;
+    font-weight: 700;
+}
