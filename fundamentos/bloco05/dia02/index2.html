@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+      <img src="" alt="">
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+
+      //atv 1
+let tagH1 = document.createElement('h1');
+
+document.getElementsByTagName('body')[0].appendChild(tagH1);
+
+document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.2 - JavaScript DOM'
+
+//atv 2
+let tagMain = document.createElement('main');
+
+document.getElementsByTagName('body')[0].appendChild(tagMain);
+
+tagMain.className = 'main-content';
+
+//atv 3
+
+let tagSection = document.createElement('section');
+
+document.getElementsByTagName('main')[0].appendChild(tagSection);
+tagSection.className = 'center-content';
+
+// atv 4
+
+let tagP = document.createElement('p');
+
+document.getElementsByClassName('center-content')[0].appendChild(tagP);
+
+tagP.innerText = 'Ola Mundo'
+
+// atv 5
+
+let tagSection2 = document.createElement('section');
+
+document.getElementsByClassName('main-content')[0].appendChild(tagSection2);
+tagSection2.className = 'left-content';
+
+//atv 6
+let tagSection3 = document.createElement('section');
+
+document.getElementsByClassName('main-content')[0].appendChild(tagSection3);
+tagSection3.className = 'right-content';
+
+//atv 7
+
+let tagImg = document.createElement('img');
+
+document.getElementsByClassName('left-content')[0].appendChild(tagImg);
+tagImg.src = "https://picsum.photos/200";
+
+tagImg.className = 'small-image';
+
+// atv 8 (Nao consegui)
+
+let tagLista = document.createElement('ul');
+let tagNaoOrdenada0 = document.createElement('li')
+
+document.getElementsByClassName('right-content')[0].appendChild(tagLista);
+
+document.getElementsByTagName('ul')[0].appendChild(tagNaoOrdenada0);
+
+tagNaoOrdenada0.innerText = 'um';
+
+// atv 9 
+
+let tagH3_1 = document.createElement('h3');
+let tagH3_2 = document.createElement('h3');
+let tagH3_3 = document.createElement('h3');
+
+document.getElementsByClassName('main-content')[0].appendChild(tagH3_1);
+
+document.getElementsByClassName('main-content')[0].appendChild(tagH3_2);
+
+document.getElementsByClassName('main-content')[0].appendChild(tagH3_3);
+
+
+
+
+// atv 1 (parte 2)
+
+tagH1.className = 'title';
+
+// atv 2
+
+
+tagH3_1.className = 'description';
+
+tagH3_2.className = 'description';
+
+tagH3_3.className = 'description';
+
+// atv 3
+
+tagMain.removeChild(tagSection2);
+
+// atv 4
+
+tagSection3.style.marginRight = 'auto';
+
+// atv 5
+
+tagSection.style.backgroundColor = 'green';
+
+// atv 6 (nao consegui)
+
+    </script>
+  </body>
+</html>
