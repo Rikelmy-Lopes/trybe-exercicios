@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+div {
+    position: absolute;
+    border: 3px solid black;
+    width: 85%;
+    height: 190%;
+    margin-left: 5%;;
+    padding: 25px;
+}
+
