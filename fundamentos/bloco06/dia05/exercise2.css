@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+  /*Tela pequena*/
+
+  @media screen and (max-width: 450px) {
+
+  body {
+      font-size:larger;
+      background-color: rgb(255, 74, 74);
+      margin: 15px;
+
+  }
+
+  h2 {
+
+    font-size: large;
+  }
+
+  h1 {
+      font-size: larger;
+  }
+
+  }
+
+
+    /*Tela Mediana*/
+
+    @media screen and (min-width: 451px) and (max-width: 920px) {
+
+  body {
+      background-color: rgb(119, 253, 119);
+      font-size: xx-large;
+      margin: 20px;
+  }
+
+  h2 {
+      font-size: x-large;
+  }
+
+  h1 {
+      font-size: xx-large;
+  }
+
+}
+    
+    
+
+     /*Tela Grande*/
+
+@media screen and (min-width: 921px) {
+    body {
+        background-color: rgb(114, 114, 255);
+        font-size: large;
+        margin: 20px;
+    }
+  
+    h2 {
+        font-size: large;
+    }
+  
+    h1 {
+        font-size: x-large;
+    }
+
+}
