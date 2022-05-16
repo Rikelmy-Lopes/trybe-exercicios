@@ -54,33 +54,33 @@
 //   }
 
 //    console.log(fatorial(5));
- let arraySkills = [`Javascript`, `Html`, `Empatia`, `Css`, `Dom`];
 
+ const array = ["Android", "iOS", "Architecture", "Teach", "Run"];
 
-   function init() {
-
-
-
-    const replaceX = (string) => {
-      let trybe = `Tryber x aqui!`;
-   
-      let trybe2 = trybe.replace(`x`, string);
-     
-     }
-   
-   const array = (trybe2) => {
-   
-     arraySkills.push(trybe2);
-     
-    }
-    return array(trybe2);
-
-
-
+function buildSkillsPhrase (paramOne) {
     
-   }
+     const fun1 = paramInner => (
+      `Tryber ${paramInner} aqui!
 
+      Tudo bem?`
+    );
 
-console.log(init())
+    let result = `${fun1(paramOne)}
 
+    Minhas cinco principais habilidades são:`;
 
+    array.forEach((skill, index) =>
+    result = `${result}
+
+    - ${skill}`);
+
+    result = `
+{result}
+
+    #goTrybe
+    `;
+
+    return result;
+}
+
+console.log(buildSkillsPhrase("Lucas"));
